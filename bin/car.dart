@@ -42,17 +42,17 @@ class Car {
 
 void main() {
 
-  Car car1 = Car('Toyota', 'Camry', 2015, 50000);
-  Car car2 = Car('Honda', 'Accord', 2018, 30000);
-  Car car3 = Car('Ford', 'Mustang', 2020, 15000);
+  Car car1 = Car('BMW', 'I7', 2023, 100);
+  Car car2 = Car('Ferrari', 'F8', 2021, 150);
+  Car car3 = Car('Rolls Royce', 'Spectre', 2024, 200);
 
-  car1.drive(150);
-  car2.drive(200);
-  car3.drive(250);
+  car1.drive(120);
+  car2.drive(160);
+  car3.drive(210);
 
   print('Car 1: ${car1.getBrand()} ${car1.getModel()}, Year: ${car1.getYear()}, Miles Driven: ${car1.getMilesDriven()}, Age: ${car1.getAge()}');
   print('Car 2: ${car2.getBrand()} ${car2.getModel()}, Year: ${car2.getYear()}, Miles Driven: ${car2.getMilesDriven()}, Age: ${car2.getAge()}');
   print('Car 3: ${car3.getBrand()} ${car3.getModel()}, Year: ${car3.getYear()}, Miles Driven: ${car3.getMilesDriven()}, Age: ${car3.getAge()}');
 
-  print('Total number of cars created: ${Car.numberOfCars}');
+  print('Total number of cars objects created: ${Car.numberOfCars}');
 }
